@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi polola?</title>    
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>¿Quieres ser mi polola?</h1>
+    <a href="#" class="button" id="si">SI</a>
+    <a href="#" class="button" id="no">NO</a>
+    <script>
+        let si = document.getElementById("si");
+        si.addEventListener("click", function(e){
+            alert("Gracias bb");
+        } );
+        
+        let no=document.getElementById("no");
+        no.addEventListener("mousemove", function(e){
+            let x = Math.round(Math.random()*93);
+            let y = Math.round(Math.random()*93);
+            no.style.left = x+"%";
+            no.style.top = y+"%";
+        });
+    </script>
+</body>
+</html>
